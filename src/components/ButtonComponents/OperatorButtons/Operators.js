@@ -10,8 +10,8 @@ const Operators = (props) => {
   const [operatorState, setOperatorState] = useState(operators)
   return (
     <div>
-      {operators.map((operator => {
-        return <OperatorButton operator={props.operators} />
+      {operatorState.map((operator => {
+        return <OperatorButton operator={operator} />
       }))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
@@ -19,3 +19,4 @@ const Operators = (props) => {
     </div>
   );
 };
+export default Operators;
