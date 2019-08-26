@@ -10,8 +10,8 @@ const Specials = (props) => {
   const [specialState, setSpecialState] = useState(specials);
   return (
     <div>
-      {specials.map((special => {
-        return <SpecialButton special={props.specials} />
+      {specialState.map((special => {
+        return <SpecialButton text={special} />
       }))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
@@ -19,3 +19,4 @@ const Specials = (props) => {
     </div>
   );
 };
+export default Specials;
