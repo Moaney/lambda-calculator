@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import NumberButton from './components/ButtonComponents/NumberButtons/NumberButton';
-import OperatorButton from './components/ButtonComponents/OperatorButtons/OperatorButton';
-import SpecialButton from './components/ButtonComponents/SpecialButtons/SpecialButton';
 import Display from './components/DisplayComponents/Display';
+import NumberButton from './components/ButtonComponents/NumberButtons/NumberButton';
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -22,6 +21,9 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <Display number={0}/>
+        <NumberButton />
+        <Numbers />
       </div>
     </div>
   );
